@@ -1,3 +1,13 @@
+import Hamster from "@/components/main/Hamster";
+import KohaneCard from "@/components/main/KohaneCard";
+
 export default function Home() {
-  return <h1>Hello World</h1>;
+  return (
+    <div>
+      <div className="h-8" />
+      <Hamster>
+        <KohaneCard />
+      </Hamster>
+    </div>
+  );
 }
