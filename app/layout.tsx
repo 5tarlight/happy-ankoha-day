@@ -17,6 +17,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta
+          content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no"
+          name="viewport"
+        />
+      </head>
       <body className={inter.className}>
         <Header />
         <main className="pl-4 pr-4 min-h-full">{children}</main>

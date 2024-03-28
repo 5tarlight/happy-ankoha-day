@@ -15,7 +15,14 @@ const Hamster = ({ children }: { children: ReactNode }) => {
           setToggle(!toggle);
         }}
       >
-        {toggle ? <nav className="text-[12rem]">🐹</nav> : children}
+        {toggle ? (
+          <div className="w-full h-full">
+            <nav className="text-[6rem] text-center">🐹</nav>
+            <span>절대 햄스터를 클릭하지 마시오</span>
+          </div>
+        ) : (
+          children
+        )}
       </span>
     </div>
   );

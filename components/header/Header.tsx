@@ -8,7 +8,7 @@ const Header = () => {
       style={{ background: gradient }}
       className="bg-yellow-200 h-16 flex w-full content-center text-center align-middle items-center justify-center text-white"
     >
-      <div className="flex max-w-[1024px] justify-between w-full">
+      <div className="flex max-w-[1024px] justify-between w-full pr-4 pl-4">
         <h1 className="select-none hover:cursor-pointer font-bold text-[1.2rem]">
           <Link href="/">Happy Ankoha Day</Link>
         </h1>
