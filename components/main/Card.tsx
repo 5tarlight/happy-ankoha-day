@@ -11,9 +11,17 @@ const Card = ({
   content: string;
   name: string;
 }) => {
+  const containerStyle = {
+    backgroundColor: color,
+  };
+  const highlightStyle = {
+    color: highlight,
+  };
+
   return (
     <div
-      className={`bg-[${color}] w-[20rem] h-[10rem] rounded-lg flex justify-between p-1`}
+      className={` w-[20rem] h-[10rem] rounded-lg flex justify-between p-1 mb-8`}
+      style={containerStyle}
     >
       <div>
         <img src={img} alt="kohane" className="h-[9.5rem]" />
@@ -23,7 +31,8 @@ const Card = ({
           {content}
         </div>
         <div
-          className={`w-full h-12 text-[${highlight}] text-right pr-6 text-[1.5rem] font-bold`}
+          className={`w-full h-12 text-right pr-6 text-[1.5rem] font-bold`}
+          style={highlightStyle}
         >
           {name}
         </div>
