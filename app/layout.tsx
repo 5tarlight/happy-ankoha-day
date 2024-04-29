@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header/Header";
+import Background from "@/components/Background";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Happy Ankoha Day!",
-  description: "안코하 사랑해요!",
+  description: "2024 Ankoha 생일카페",
 };
 
 export default function RootLayout({
@@ -27,7 +27,7 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <Header />
+        <Background />
         <main className="pl-4 pr-4 min-h-full">{children}</main>
       </body>
     </html>
