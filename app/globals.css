@@ -9,6 +9,7 @@
 html,
 body {
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 body {
@@ -26,4 +27,12 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.ann {
+  color: #00bbdc;
+}
+
+.kohane {
+  color: #ff679a;
 }

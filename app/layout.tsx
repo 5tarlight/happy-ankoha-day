@@ -28,7 +28,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <Background />
-        <main className="pl-4 pr-4 min-h-full">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );
