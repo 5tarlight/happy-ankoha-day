@@ -10,8 +10,9 @@ export default function TopBanner() {
       className="w-full h-48 flex justify-center bg-red-200 items-center"
       style={{ background: gradient, opacity: 0.7 }}
     >
-      <h1 className="font-bold text-2xl">
-        Happy <p className="ann inline">An</p>
+      <h1 className="font-bold text-3xl">
+        <p>Happy</p>
+        <p className="ann inline">An</p>
         <p className="kohane inline">Koha</p> Day!
       </h1>
     </div>
