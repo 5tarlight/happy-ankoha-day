@@ -22,7 +22,7 @@ export default function Background() {
         style={{ backgroundImage: "url('/img/bg/bg_lottie.webp')" }}
       />
       <div
-        className="z-[-8] fixed top-0 left-0 bg-repeat-y w-full h-[10000%]"
+        className="z-[-8] fixed top-0 left-0 bg-repeat-y w-full"
         style={{
           backgroundImage: "url('/img/bg/bg_layer1.webp')",
           backgroundSize: "100% auto",
@@ -33,7 +33,7 @@ export default function Background() {
         }}
       />
       <div
-        className="z-[-7] fixed top-0 left-0 bg-repeat-y w-full h-[10000%]"
+        className="z-[-7] fixed top-0 left-0 bg-repeat-y w-full"
         style={{
           backgroundImage: "url('/img/bg/bg_layer2.webp')",
           backgroundSize: "100% auto",
@@ -44,7 +44,7 @@ export default function Background() {
         }}
       />
       <div
-        className="z-[-7] fixed top-0 left-0 bg-repeat-y w-full h-[10000%]"
+        className="z-[-7] fixed top-0 left-0 bg-repeat-y w-full"
         style={{
           backgroundImage: "url('/img/bg/bg_layer3.webp')",
           backgroundSize: "100% auto",
