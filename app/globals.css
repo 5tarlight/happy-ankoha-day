@@ -8,8 +8,14 @@
 
 html,
 body {
-  max-width: 100%;
   overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #b3fffd 0, #e3e6ff 50%, #fde5f5 100%);
 }
 
 * {
@@ -21,4 +27,12 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.ann {
+  color: #00bbdc;
+}
+
+.kohane {
+  color: #ff679a;
 }

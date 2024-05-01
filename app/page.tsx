@@ -1,17 +1,23 @@
-import AnnCard from "@/components/main/AnnCard";
-import Hamster from "@/components/main/Hamster";
-import KohaneCard from "@/components/main/KohaneCard";
+import ColabList from "@/components/ColabList";
+import Footer from "@/components/Footer";
+import SepTitle from "@/components/SepTitle";
+import TopBanner from "@/components/TopBanner";
 
 export default function Home() {
   return (
     <div>
-      <div className="h-8" />
-      <Hamster>
-        <KohaneCard />
-      </Hamster>
-      <Hamster>
-        <AnnCard />
-      </Hamster>
+      <TopBanner />
+      <SepTitle title="협력진">
+        <ColabList />
+      </SepTitle>
+      <SepTitle title="전프레">
+        <div />
+      </SepTitle>
+      <SepTitle title="오시는 길">
+        <div />
+      </SepTitle>
+
+      <Footer />
     </div>
   );
 }
