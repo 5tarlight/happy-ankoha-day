@@ -13,7 +13,7 @@ export default function Home() {
       <SepTitle title="전프레">
         <div />
       </SepTitle>
-      <SepTitle title="STAFF">
+      <SepTitle title="오시는 길">
         <div />
       </SepTitle>
 
