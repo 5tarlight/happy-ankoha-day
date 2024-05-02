@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: {
-      url: "/img/cover.png",
+      url: "https://cdn.jsdelivr.net/gh/5tarlight/vlog-image@main/happy-ankoha/cover.png",
       alt: "Happy AnKoha Day!",
     },
   },
