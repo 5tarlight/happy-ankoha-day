@@ -10,12 +10,16 @@ function QnA({ question, answer }: { question: string; answer: string }) {
 export default function () {
   const qnaList = [
     {
-      question: "질문1",
+      question: "",
       answer: "답변1",
     },
     {
       question: "질문2",
       answer: "답변2",
+    },
+    {
+      question: "질문3",
+      answer: "답변3",
     },
     {
       question: "질문3",
