@@ -1,4 +1,5 @@
 import Card from "@/components/Card";
+import DetailDropdown from "@/components/DetailDropdown";
 
 export default function Home() {
   const gradient =
@@ -46,6 +47,9 @@ export default function Home() {
           2
         </Card>
       </div> */}
+      <div className="w-full flex justify-center">
+        <DetailDropdown />
+      </div>
     </div>
   );
 }

@@ -13,6 +13,12 @@ export const metadata: Metadata = {
   icons: {
     icon: "/img/logo.png",
   },
+  openGraph: {
+    images: {
+      url: "/img/cover.png",
+      alt: "Happy AnKoha Day!",
+    },
+  },
 };
 
 export default function RootLayout({
