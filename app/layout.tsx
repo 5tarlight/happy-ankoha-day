@@ -2,12 +2,23 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Background from "@/components/Background";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Happy Ankoha Day!",
   description: "2024 Ankoha 생일카페",
+  icons: {
+    icon: "/img/logo.png",
+  },
+  openGraph: {
+    images: {
+      url: "/img/cover.png",
+      alt: "Happy AnKoha Day!",
+    },
+  },
 };
 
 export default function RootLayout({
@@ -25,10 +36,13 @@ export default function RootLayout({
           content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no"
           name="viewport"
         />
+        <link rel="icon" href={"/img/logo.png"} />
       </head>
       <body className={inter.className}>
         {/* <Background /> */}
-        <main>{children}</main>
+        <Header />
+        <main className="min-h-[100vh]">{children}</main>
+        <Footer />
       </body>
     </html>
   );

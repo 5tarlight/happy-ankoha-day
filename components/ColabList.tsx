@@ -62,6 +62,9 @@ export default function ColabList() {
             </a>
           );
       })}
+      <div className="mt-2 text-gray-600 text-sm">
+        협력진 목록은 변경될 수 있습니다.
+      </div>
     </div>
   );
 }
