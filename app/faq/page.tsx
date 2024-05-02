@@ -1,12 +1,17 @@
 function QnA({ question, answer }: { question: string; answer: string }) {
   return (
     <div>
-      <div className="font-bold">Q. {question}</div>
-      <div className="text-wrap">
-        A.
-        {answer.split("\n").map((v, i) => (
-          <div key={i}>{v}</div>
-        ))}
+      <div className="font-bold flex">
+        <div className="mr-1">Q.</div>
+        <div> {question}</div>
+      </div>
+      <div className="text-wrap flex">
+        <div className="mr-1">A. </div>
+        <div>
+          {answer.split("\n").map((v, i) => (
+            <div key={i}>{v}</div>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -37,7 +42,13 @@ e.g. 민증,면허증, 여권, 학생증, 청소년증, 등본, PASS앱`,
 
   return (
     <div>
-      <h1 className="mt-16 mb-8 text-center text-3xl font-bold">Q&A</h1>
+      <h1 className="mt-16  text-center text-3xl font-bold">Q&A</h1>
+      <div className="flex justify-center">
+        <div className="text-center mb-8 text-sm mt-2 max-w-[300px] w-full border-b-4 border-white pb-4">
+          <div>질문은 받은 순서대로 작성하였습니다.</div>
+          <div>겹치는 질문은 제외했습니다.</div>
+        </div>
+      </div>
       <div className="w-full flex justify-center">
         <div className="w-full max-w-[300px] flex flex-col gap-4">
           {qnaList.map((qna, idx) => (
