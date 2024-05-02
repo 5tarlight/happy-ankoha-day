@@ -3,7 +3,7 @@ import Link from "next/link";
 function Item({ text, href }: { text: string; href: string }) {
   return (
     <Link href={href}>
-      <div className="hover:bg-gray-200 p-2 rounded-md hover:cursor-pointer select-none">
+      <div className="hover:bg-gray-200 px-2 py-1 rounded-md hover:cursor-pointer select-none">
         {text}
       </div>
     </Link>

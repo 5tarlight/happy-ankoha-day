@@ -17,6 +17,8 @@ export const metadata: Metadata = {
     images: {
       url: "https://cdn.jsdelivr.net/gh/5tarlight/vlog-image@main/happy-ankoha/cover.png",
       alt: "Happy AnKoha Day!",
+      width: 1200,
+      height: 630,
     },
   },
 };
