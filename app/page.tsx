@@ -6,18 +6,16 @@ import TopBanner from "@/components/TopBanner";
 export default function Home() {
   return (
     <div>
-      <TopBanner />
+      {/* <TopBanner />
       <SepTitle title="협력진">
         <ColabList />
       </SepTitle>
       <SepTitle title="전프레">
         <div />
       </SepTitle>
-      <SepTitle title="오시는 길">
+      <SepTitle title="오시는">
         <div />
-      </SepTitle>
-
-      <Footer />
+      </SepTitle> */}
     </div>
   );
 }
