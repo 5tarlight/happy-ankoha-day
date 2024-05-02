@@ -30,6 +30,12 @@ export default function DetailDropdown() {
             }}
           />
         </div>
+        <div className="flex justify-between mt-2">
+          <div className="w-[110px] text-center ann font-bold">白石 杏</div>
+          <div className="w-[110px] text-right kohane font-bold">
+            小豆沢 こはね
+          </div>
+        </div>
         <div className="text-center mt-4">{isDown ? "접기" : "펼치기"}</div>
       </div>
       {isDown && (
