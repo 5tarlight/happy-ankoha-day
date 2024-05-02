@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Background from "@/components/Background";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,6 +41,7 @@ export default function RootLayout({
         <link rel="icon" href={"/img/logo.png"} />
       </head>
       <body className={inter.className}>
+        <Analytics />
         {/* <Background /> */}
         <Header />
         <main className="min-h-[100vh]">{children}</main>

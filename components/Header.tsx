@@ -37,7 +37,7 @@ export default function Header() {
         <Item text="협력진" href="/colab" />
         <Item text="전프레" href="/pre" />
         <Item text="카페 위치" href="/map" />
-        <Item text="FAQ" href="/faq" />
+        <Item text="Q&A" href="/faq" />
       </div>
     </header>
   );
