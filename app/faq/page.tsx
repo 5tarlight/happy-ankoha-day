@@ -2,7 +2,12 @@ function QnA({ question, answer }: { question: string; answer: string }) {
   return (
     <div>
       <div className="font-bold">Q. {question}</div>
-      <div className="text-wrap">A. {answer}</div>
+      <div className="text-wrap">
+        A.
+        {answer.split("\n").map((v, i) => (
+          <div key={i}>{v}</div>
+        ))}
+      </div>
     </div>
   );
 }
@@ -10,7 +15,8 @@ function QnA({ question, answer }: { question: string; answer: string }) {
 export default function () {
   const qnaList = [
     {
-      question: "혹시 나이제한 있나요? 있다면 몇년생부터 입장 가능인가요? 또 나이 인증 방법이 있나요?",
+      question:
+        "혹시 나이제한 있나요? 있다면 몇년생부터 입장 가능인가요? 또 나이 인증 방법이 있나요?",
       answer: `질문 감사합니다 행사 당일 기준으로 만14세 이상 받을 예정입니다. 나이 확인을 위한 신분증 검사가 있을 예정입니다.
 e.g. 민증,면허증, 여권, 학생증, 청소년증, 등본, PASS앱`,
     },
