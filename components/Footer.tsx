@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="flex w-full justify-center">
+    <div className="flex w-full justify-center mt-16">
       <div className="w-[80%] h-56 border-t-2 border-white mt-4 max-w-[500px] flex flex-col items-center justify-center">
         <div className="mb-2">&copy; 2024 AnKoha Day.</div>
         <div className="text-center">

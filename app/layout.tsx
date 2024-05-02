@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Happy Ankoha Day!",
   description: "2024 Ankoha 생일카페",
   icons: {
-    icon: "/img/logo.png",
+    icon: "/img/favicon.png",
   },
   openGraph: {
     images: {
@@ -38,7 +38,7 @@ export default function RootLayout({
           content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no"
           name="viewport"
         />
-        <link rel="icon" href={"/img/logo.png"} />
+        <link rel="icon" href={"/img/favicon.png"} />
       </head>
       <body className={inter.className}>
         <Analytics />
