@@ -34,39 +34,41 @@ export default function ColabList() {
   ];
 
   return (
-    <div className="w-full flex flex-wrap justify-between">
-      {colabs.map((help, i) => {
-        const inner = (
-          <div
-            className="h-[70px] w-[130px] flex items-center justify-center gap-4 rounded-2xl hover:cursor-pointer"
-            key={i}
-          >
-            <div className="opacity-100 text-center">
-              {help === "anonymous" ? (
-                "익명"
-              ) : (
-                <>
-                  <div className="font-bold">{help.name}</div>
-                  <div>{`@${help.handle}`}</div>
-                </>
-              )}
-            </div>
-          </div>
-        );
-
-        if (help === "anonymous") return inner;
-        else
-          return (
-            <a
-              href={`https://twitter.com/${help.handle}`}
-              target="_blank"
-              rel="noreferrer"
+    <div className="flex flex-col">
+      <div className="w-full flex flex-wrap justify-between">
+        {colabs.map((help, i) => {
+          const inner = (
+            <div
+              className="h-[70px] w-[130px] flex items-center justify-center gap-4 rounded-2xl hover:cursor-pointer"
               key={i}
             >
-              {inner}
-            </a>
+              <div className="opacity-100 text-center">
+                {help === "anonymous" ? (
+                  "익명"
+                ) : (
+                  <>
+                    <div className="font-bold">{help.name}</div>
+                    <div>{`@${help.handle}`}</div>
+                  </>
+                )}
+              </div>
+            </div>
           );
-      })}
+  
+          if (help === "anonymous") return inner;
+          else
+            return (
+              <a
+                href={`https://twitter.com/${help.handle}`}
+                target="_blank"
+                rel="noreferrer"
+                key={i}
+              >
+                {inner}
+              </a>
+            );
+        })}
+      </div>
       <div className="mt-2 text-gray-600 text-sm">
         협력진 목록은 변경될 수 있습니다.
       </div>
