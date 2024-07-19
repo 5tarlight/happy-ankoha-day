@@ -27,6 +27,8 @@ export default function ColabList() {
     { name: "り", handle: "R1_S0U" },
     { name: "와뉴뉴", handle: "wa_new2" },
     { name: "쏙독새", handle: "milgamyong" },
+    { name: "햄", handle: "ham_star_vivid" },
+    "anonymous",
     "anonymous",
     "anonymous",
     "anonymous",
