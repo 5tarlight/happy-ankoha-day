@@ -8,7 +8,6 @@ export default function ColabList() {
     { name: "카비", handle: "kar_be_" },
     { name: "크림", handle: "pskpream" },
     { name: "도묘", handle: "m_2__o" },
-    { name: "이인", handle: "2IN_2in" },
     { name: "무맛", handle: "mumat_39" },
     { name: "물", handle: "plantprsk_8978" },
     { name: "백강", handle: "lilyburglar" },
