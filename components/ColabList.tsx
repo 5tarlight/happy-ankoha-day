@@ -12,7 +12,7 @@ export default function ColabList() {
     { name: "물", handle: "plantprsk_8978" },
     { name: "백강", handle: "lilyburglar" },
     { name: "안뇽", handle: "annyong__hi" },
-    { name: "말랑", handle: "rangrang_yee" },
+    { name: "☁️", handle: "cl0o0ud__" },
     { name: "241", handle: "241_BLGL" },
     { name: "군밤", handle: "yakiguri_04" },
     { name: "D", handle: "d_ddyy_" },
