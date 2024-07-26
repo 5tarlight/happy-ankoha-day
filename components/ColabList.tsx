@@ -44,7 +44,7 @@ export default function ColabList() {
         {colabs.map((help, i) => {
           const inner = (
             <div
-              className="h-[70px] w-[130px] flex items-center justify-center gap-4 rounded-2xl hover:cursor-pointer"
+              className="h-[70px] w-[130px] flex items-center justify-center gap-4 rounded-2xl hover:cursor-pointer mb-4"
               key={i}
             >
               <div className="opacity-100 text-center">
@@ -59,7 +59,7 @@ export default function ColabList() {
               </div>
             </div>
           );
-  
+
           if (help === "anonymous") return inner;
           else
             return (
@@ -74,7 +74,7 @@ export default function ColabList() {
             );
         })}
       </div>
-      <div className="mt-2 text-gray-600 text-sm mt-8">
+      <div className="text-gray-600 text-sm mt-8">
         협력진 목록은 변경될 수 있습니다.
       </div>
     </div>
