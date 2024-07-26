@@ -24,30 +24,7 @@ export default function Home() {
         </div>
         <div className="mt-4">2024. 12. 28 ~ 29.</div>
       </div>
-
-      {/* <div className="flex flex-col justify-center items-center mt-16 gap-8">
-        <Card img="/img/ann.webp" highlight="#00bbdc" bgColor="#8ceeff">
-          <div>생일 : 7월 26일</div>
-          <div>신장 : 160cm</div>
-          <div>학교 : 카미야마 고등학교</div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </Card>
-        <Card
-          img="/img/kohane.webp"
-          highlight="#FF679A"
-          bgColor="#ffb2cc"
-          reverse
-        >
-          2
-        </Card>
-      </div> */}
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center select-none">
         <DetailDropdown />
       </div>
     </div>
