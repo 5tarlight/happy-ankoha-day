@@ -32,7 +32,7 @@ export default function ColabList() {
     { name: "팡히", handle: "AKTU_JMT" },
     { name: "적상", handle: "Zeoksang" },
     { name: "べる", handle: "Beru_popooo" },
-    { nane: "mk🥞☕", handle: "mk_aktu" },
+    { name: "mk🥞☕", handle: "mk_aktu" },
     "anonymous",
     "anonymous",
     "anonymous",
