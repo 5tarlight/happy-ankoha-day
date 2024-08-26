@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function CafeMap() {
   return (
     <div className="flex justify-center">
