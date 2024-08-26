@@ -47,7 +47,7 @@ export default function Pre() {
           </h2>
           <div className="w-full flex flex-col gap-4 items-center">
             {pres.map((pre, idx) => (
-              <div key={idx} className="w-[300px] h-[380px]">
+              <div key={idx} className="w-[300px] h-[450px]">
                 <Prestige {...pre} />
               </div>
             ))}
@@ -61,7 +61,7 @@ export default function Pre() {
 
           <div className="w-full flex flex-col gap-4 items-center">
             {draws.map((draw, idx) => (
-              <div key={idx} className="w-[300px] h-[380px]">
+              <div key={idx} className="w-[300px] h-[450px]">
                 <Prestige {...draw} />
               </div>
             ))}
@@ -75,7 +75,7 @@ export default function Pre() {
 
           <div className="w-full flex flex-col gap-4 items-center">
             {specials.map((special, idx) => (
-              <div key={idx} className="w-[300px] h-[380px]">
+              <div key={idx} className="w-[300px] h-[450px]">
                 <Prestige {...special} />
               </div>
             ))}

@@ -14,7 +14,12 @@ export default function Prestige({
   title,
 }: PrestigeObject) {
   return (
-    <div className="w-full h-full p-4 bg-gray-600 bg-opacity-0 hover:bg-opacity-30 transition-all rounded-lg cursor-pointer">
+    <div
+      className={
+        "w-full h-full p-4 bg-gray-600 bg-opacity-0 rounded-lg "
+        // "hover:bg-opacity-30 transition-all cursor-pointer"
+      }
+    >
       <div className="w-full h-[300px]">
         {image === "mock" ? (
           <MockImage />
@@ -22,7 +27,13 @@ export default function Prestige({
           <img src={image} alt={title} className="w-full rounded-lg" />
         )}
       </div>
-      <div className="font-bold text-center mt-6">{title}</div>
+      {title && <div className="font-bold text-center mt-6">｢ {title} ｣</div>}
+      {author && <div className="text-center">{author}</div>}
+      {description && (
+        <div className="text-center mt-2 text-gray-500 text-sm italic">
+          {description}
+        </div>
+      )}
     </div>
   );
 }
