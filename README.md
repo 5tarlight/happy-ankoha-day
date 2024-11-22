@@ -4,6 +4,8 @@
 <img width="538" alt="image" src="https://github.com/5tarlight/happy-ankoha-day/assets/45203447/4fa98a5a-adbc-4622-80fd-3d87d460c949">
 
 
+The domain may expire in the future. In that case, you can access the website at [here](https://happy-ankoha-day.vercel.app/).
+
 # Authors
 - YEAHx4 (5tarlight)
 
