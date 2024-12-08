@@ -3,51 +3,41 @@ import Prestige, { PrestigeObject } from "@/components/Prestige";
 export default function Pre() {
   const pres: PrestigeObject[] = [
     {
-      image: "mock",
-      title: "Test1",
+      image: "/img/draw/sat.png",
     },
     {
-      image: "mock",
-      title: "Test2",
-      description: "때론 설명이 필요할 때도 있습니다.",
-    },
-    {
-      image: "mock",
-      title: "Test3",
-      description: "자신의 작품을 소개해보세요.",
-      author: "예작가",
+      image: "/img/draw/sun.png",
     },
   ];
 
   const draws: PrestigeObject[] = [
     {
-      image: "mock",
+      image: "/img/draw/lucky1.png",
+    },
+    {
+      image: "/img/draw/lucky2.png",
     },
   ];
 
   const specials: PrestigeObject[] = [
     {
-      image: "mock",
-      title: "Test5",
-      author: "예작가2",
+      image: "/img/draw/event1.png",
     },
     {
-      image: "mock",
-      title: "Test6",
-      description: "때론 아무 말이 없는 게 좋을 때도 있습니다.",
+      image: "/img/draw/event2.png",
     },
   ];
 
   return (
     <div className="flex justify-center">
-      <div className="w-full max-w-[500px] px-4 flex flex-col">
+      <div className="w-full max-w-[500px] flex flex-col">
         <div>
-          <h2 className="font-bold text-2xl text-center mt-16 pb-4 border-b-[4px] border-white mb-8">
+          <h2 className="font-bold text-2xl text-center mt-16 pb-4 border-b-[4px] border-white mb-8 mx-4">
             전프레
           </h2>
-          <div className="w-full flex flex-col gap-4 items-center">
+          <div className="w-full flex flex-col gap-8 items-center">
             {pres.map((pre, idx) => (
-              <div key={idx} className="w-[300px] h-[450px]">
+              <div key={idx} className="w-[320px] h-[320px]">
                 <Prestige {...pre} />
               </div>
             ))}
@@ -55,13 +45,13 @@ export default function Pre() {
         </div>
 
         <div>
-          <h2 className="font-bold text-2xl text-center mt-16 pb-4 border-b-[4px] border-white mb-8">
+          <h2 className="font-bold text-2xl text-center mt-16 pb-4 border-b-[4px] border-white mb-8 mx-4">
             럭키 드로우
           </h2>
 
-          <div className="w-full flex flex-col gap-4 items-center">
+          <div className="w-full flex flex-col gap-8 items-center">
             {draws.map((draw, idx) => (
-              <div key={idx} className="w-[300px] h-[450px]">
+              <div key={idx} className="w-[300px] h-[320px]">
                 <Prestige {...draw} />
               </div>
             ))}
@@ -69,13 +59,13 @@ export default function Pre() {
         </div>
 
         <div>
-          <h2 className="font-bold text-2xl text-center mt-16 pb-4 border-b-[4px] border-white mb-8">
+          <h2 className="font-bold text-2xl text-center mt-16 pb-4 border-b-[4px] border-white mb-8 mx-4">
             특전
           </h2>
 
-          <div className="w-full flex flex-col gap-4 items-center">
+          <div className="w-full flex flex-col gap-4 items-center mb-16">
             {specials.map((special, idx) => (
-              <div key={idx} className="w-[300px] h-[450px]">
+              <div key={idx} className="w-[320px] h-[530px]">
                 <Prestige {...special} />
               </div>
             ))}
